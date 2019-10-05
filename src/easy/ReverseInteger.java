@@ -2,9 +2,9 @@ package easy;
 
 public class ReverseInteger {
 	
-	long reversed = 0;
+	int reversed = 0;
 	
-	public ReverseInteger(long x) {
+	public ReverseInteger(int x) {
 		this.reversed = reverse(x);
 	}
 	
@@ -12,7 +12,7 @@ public class ReverseInteger {
 		return (this.reversed + "");
 	}
 	
-	public long reverse(long x) {
+	public int reverse(int x) {
         String xStr = "" + x;
         String reversed = "";
         int startIdx = 0;
@@ -36,12 +36,17 @@ public class ReverseInteger {
         	endIdx --;
         }
         reversed += String.valueOf(numbers).substring(startIdx);
-        return (Long.parseLong(reversed));
+        int output = 0;
+        try{
+            output = Integer.parseInt(reversed);
+        }catch(Exception e){
+            return 0;
+        }
+        return output;
     }
 	
-	
 	public static void main(String[] args) {
-		long testInt = 9646324351l;
+		int testInt = 1;
 		ReverseInteger test = new ReverseInteger(testInt);
 		System.out.println(test);
 	}
