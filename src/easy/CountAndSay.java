@@ -2,16 +2,6 @@ package easy;
 
 public class CountAndSay {
 
-	String read;
-	
-	public CountAndSay(int n) {
-		this.read = countAndSay(n);
-	}
-	
-	public String toString() {
-		return read;
-	}
-	
 	public String countAndSay(int n) {
 		if (n == 1) {
 			return "1";
@@ -39,10 +29,4 @@ public class CountAndSay {
 		return nextCountNumbers;
 	}
 	
-	public static void main(String[] args) {
-		int test = 4;
-		CountAndSay testCase = new CountAndSay(test);
-		System.out.println(testCase);
-	}
-
 }

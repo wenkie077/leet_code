@@ -3,16 +3,6 @@ package easy;
 import java.util.ArrayList;
 
 public class PalindromeNumber {
-
-	boolean result;
-	
-	public PalindromeNumber(int x) {
-		this.result = isPalindrome(x);
-	}
-	
-	public String toString() {
-		return this.result + "";
-	}
 	
 	public boolean isPalindrome(int x) {
         ArrayList<Integer> digit = new ArrayList<Integer>();
@@ -38,12 +28,5 @@ public class PalindromeNumber {
             return true;
         }
     }
-	
-	public static void main(String[] args) {
-		int test = 12320;
-		PalindromeNumber testCase = new PalindromeNumber(test);
-		System.out.println(testCase);
-
-	}
 
 }

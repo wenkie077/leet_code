@@ -2,16 +2,6 @@ package easy;
 
 public class ReverseInteger {
 	
-	int reversed = 0;
-	
-	public ReverseInteger(int x) {
-		this.reversed = reverse(x);
-	}
-	
-	public String toString() {
-		return (this.reversed + "");
-	}
-	
 	public int reverse(int x) {
         String xStr = "" + x;
         String reversed = "";
@@ -45,10 +35,5 @@ public class ReverseInteger {
         return output;
     }
 	
-	public static void main(String[] args) {
-		int testInt = 1;
-		ReverseInteger test = new ReverseInteger(testInt);
-		System.out.println(test);
-	}
 
 }

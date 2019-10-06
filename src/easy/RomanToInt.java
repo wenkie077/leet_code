@@ -2,16 +2,6 @@ package easy;
 
 public class RomanToInt {
 
-	int number;
-	
-	public RomanToInt(String s) {
-		this.number = romanToInt(s);
-	}
-	
-	public String toString() {
-		return this.number + "";
-	}
-	
 	public int romanToInt(String s) {
         char[] input = s.toUpperCase().toCharArray();
         int result = 0;
@@ -62,11 +52,5 @@ public class RomanToInt {
         }
         return result;
     }
-	
-	
-	public static void main(String[] args) {
-		String test = "MCMXCIV";
-		RomanToInt testCase = new RomanToInt(test);
-		System.out.println(testCase);
-	}
+
 }

@@ -1,16 +1,6 @@
 package easy;
 
 public class ValidParentheses {
-
-	boolean result;
-	
-	public ValidParentheses(String s) {
-		this.result = isValid(s);
-	}
-	
-	public String toString() {
-		return this.result + "";
-	}
 	
 	public boolean isValid(String s) {
 		int idx = -1;
@@ -34,11 +24,5 @@ public class ValidParentheses {
 		}
         return isValid(s);
     }
-	public static void main(String[] args) {
-		String test = "([]({}))";
-		ValidParentheses testCase = new ValidParentheses(test);
-		System.out.println(testCase);
-
-	}
-
+	
 }

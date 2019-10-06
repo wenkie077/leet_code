@@ -1,26 +1,6 @@
 package easy;
 
 public class MergingSortedList {
-
-	ListNode finalNode;
-	
-	public MergingSortedList(ListNode l1, ListNode l2) {
-		this.finalNode = mergeTwoLists(l1,l2);
-	}
-	
-	public String toString() {
-		ListNode node = this.finalNode;
-		String output = "";
-		while (node != null) {
-			output += node.val;
-			if (node.next != null) {
-				output += "->";
-			}
-			node = node.next;
-		}
-		return output;
-	}
-	
 	
 	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		int smallerVal;
@@ -57,16 +37,4 @@ public class MergingSortedList {
 		return l3;
     }
 	
-	
-	public static void main(String[] args) {
-		ListNode test1 = new ListNode(1);
-		test1.next = new ListNode(2);
-		test1.next.next = new ListNode(4);
-		ListNode test2 = new ListNode(1);
-		test2.next = new ListNode(3);
-		test2.next.next = new ListNode(4);
-		MergingSortedList testCase = new MergingSortedList(test1, test2);
-		System.out.println(testCase);
-	}
-
 }

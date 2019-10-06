@@ -1,16 +1,6 @@
 package easy;
 
 public class MaximumSubarray {
-
-	int result;
-	
-	public MaximumSubarray(int[] nums) {
-		this.result = maxSubArray(nums);
-	}
-	
-	public String toString() {
-		return this.result + "";
-	}
 	
 	public int maxSubArray(int[] nums) {
         int largestSum = nums[0];
@@ -40,10 +30,4 @@ public class MaximumSubarray {
         
     }
 	
-	public static void main(String[] args) {
-		int[] test = {-2,1,-3,4,-1,2,1,-5,4};
-		MaximumSubarray testCase = new MaximumSubarray(test);
-		System.out.println(testCase);
-	}
-
 }

@@ -1,16 +1,6 @@
 package easy;
 
 public class LongestCommonPrefix {
-
-	String commonPrefix;
-	
-	public LongestCommonPrefix(String[] strs) {
-		this.commonPrefix = longestCommonPrefix(strs);
-	}
-	
-	public String toString() {
-		return this.commonPrefix;
-	}
 	
 	public String longestCommonPrefix(String[] strs) {
         if (strs.length == 1) {
@@ -39,11 +29,4 @@ public class LongestCommonPrefix {
 		return commonPrefix;
     }
 	
-	
-	public static void main(String[] args) {
-		String[] test = {"asfa","asfasdf","asfas"};
-		LongestCommonPrefix testCase = new LongestCommonPrefix(test);
-		System.out.println(testCase);
-	}
-
 }

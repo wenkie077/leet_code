@@ -1,16 +1,6 @@
 package easy;
 
 public class LengthOfLastWord {
-
-	int result;
-	
-	public LengthOfLastWord(String s) {
-		this.result = lengthOfLastWord(s);
-	}
-	
-	public String toString() {
-		return this.result + "";
-	}
 	
 	public int lengthOfLastWord(String s) {
 		s = s.trim();
@@ -22,11 +12,4 @@ public class LengthOfLastWord {
         }
     }
 	
-	public static void main(String[] args) {
-		String test = " hello world   ";
-		LengthOfLastWord testCase = new LengthOfLastWord(test);
-		System.out.println(testCase);
-
-	}
-
 }

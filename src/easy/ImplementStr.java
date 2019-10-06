@@ -1,16 +1,6 @@
 package easy;
 
 public class ImplementStr {
-
-	int index;
-	
-	public ImplementStr(String haystack, String needle) {
-		this.index = strStr(haystack,needle);
-	}
-	
-	public String toString() {
-		return index + "";
-	}
 	
 	public int strStr(String haystack, String needle) {
 		if (needle.length() == 0) {
@@ -39,11 +29,5 @@ public class ImplementStr {
         }
         return compare;
     }
-	
-	public static void main(String[] args) {
-		String test1 = "mississippi";
-		String test2 = "issip";
-		ImplementStr testCase = new ImplementStr(test1, test2);
-		System.out.println(testCase);
-	}
+
 }
