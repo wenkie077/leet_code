@@ -12,11 +12,4 @@ public class TestCase {
 		root.right.left = new TreeNode(-2);
 		System.out.println(PathSum.hasPathSum(root,-1));
 	}
-//                1
-//               / \
-//              -2 -3
-//             / \  /
-//            1  3 -2
-//           /
-//          -1
 }
